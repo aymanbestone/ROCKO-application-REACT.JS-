@@ -1,25 +1,52 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Nav from "./component/nav";
+import "./App.css";
+import Contact from "./component/contact";
+import Suppliers from "./component/suppliers";
+import Home from "./component/home";
+import Careers from "./component/careers";
+import Kitcommunication from "./component/kitCommunication";
+import GrandeEntreprise from "./component/grande-entreprise";
+import Press from "./component/press";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Nav />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div>
+              <Home />
+              <Contact />
+            </div>
+          }
+        />
+        <Route path="/suppliers" element={ <div>
+              <Suppliers />
+              <Contact />
+            </div>} />
+        <Route path="/grande-entreprise" element={ <div>
+              <GrandeEntreprise />
+              <Contact />
+            </div>} />
+        <Route path="/kitcommunication" element={ <div>
+              <Kitcommunication />
+              <Contact />
+            </div>} />
+        <Route path="/press" element={ <div>
+              <Press />
+              <Contact />
+            </div>} />
+        <Route path="/careers" element={ <div>
+              <Careers />
+              <Contact />
+            </div>} />
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;

@@ -1,0 +1,368 @@
+/* Home acceuil CSS */
+
+/*variable*/
+:root {
+    --mainColor: #186AA5;
+    --seondaryColor: #2c4755;
+    --backgroundServices: #f6f6f6;
+    --mainTransitionDuration: 0.3s;
+  }
+  /*container*/
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  /*end container*/
+  /*end main-title*/
+  /*start landing press*/
+  .landing-press{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:#e8eff7 ;
+    height: 85vh;
+    position: relative;
+  }
+  .landing-press h3 {
+    color: var(--mainColor);
+    font-size: 25px;
+  }
+  .landing-press p {
+    font-size: 18px;
+  }
+  .landing-press .container{
+   position: absolute;
+   top: 25vh;
+   display: flex;
+   flex-direction: column;
+   gap: 30px;
+   margin-left: 10vh;
+  }
+  /*end landing press*/
+  /*start images press container*/
+  #images-press{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    padding-top: 60px;
+    padding-bottom:  60px;
+    
+  }
+  #images-press .container > h1{
+ font-size: 50px;
+ color: var(--mainColor);
+ margin-bottom: 10px;
+ text-align: center;
+  }
+  #images-press .container > h1 > span {
+    color: #6DACD9;
+  }
+  #images-press  .container > p  {
+    font-size: 18px;
+    margin-bottom: 10px;
+    -webkit-text-stroke: #fff 0.02px;
+    color: #186AA5;
+    width: 40%;
+    margin-right: auto;
+    margin-left:auto ;
+    text-align: center;
+
+  }
+  #images-press .cards{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  #images-press  .cards .card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin: auto;
+    object-position: top;
+  }
+  #images-press  .cards .card  {
+   display: flex;
+   flex-direction: column;
+   min-width: 300px;
+   flex-wrap: wrap;
+   width: 22%;
+  }
+  #images-press  .cards .card  {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+   }
+   #images-press  .cards .card  h2 {
+  font-size: 17px;
+  color: var(--mainColor);
+   }
+   #images-press  .cards .card  p {
+    font-size: 12px;
+    width: 100%;
+    color: var(--mainColor);
+     }
+  /*end images press container*/
+  /*start start steps container*/
+  .steps-kit{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .steps-kit .container >   h1 {
+    font-size: 50px;
+    color: #186AA5;
+    text-align: center;
+  }
+  .steps-kit .container > p {
+    width: 800px;
+    font-size: 15px;
+    margin-top: 3%;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    width: 40%;
+    margin: auto;
+    margin-top: 3%;
+    text-align: center;
+  }
+  /****************/
+  .steps-content-kit{
+    display: flex;
+    justify-content: center; /* Centre le contenu horizontalement */
+    align-items: center; /* Centre le contenu verticalement */
+    gap: 20px; /* Espace entre les deux sections */
+    padding-top: 40px;
+  }
+  
+  .steps-content-kit .image-section img{
+    width:800px;
+    border-radius: 10px;
+
+  }
+
+  .steps-content-kit .icon-image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .steps-content-kit .text-section {
+    background-color: #e5eff8; /* Couleur de fond de la section texte */
+    padding: 50px;
+    width: 400px;
+    position: relative;
+    margin-left: -60px;
+    border-radius: 10px;
+    
+  }
+  
+  .steps-content-kit .text-section h2 {
+    color: #1d6ca4;
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+  
+  .text-section ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .text-section li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+  }
+  
+  .check-icon {
+    color: #1d6ca4;
+    margin-right: 10px;
+    border: solid 1px var(--mainColor);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cta-button {
+    background-color: #1d6ca4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin:auto;
+  width: 40%;
+  }
+  
+
+  /*end kit steps container*/
+  /* start boutton view more*/
+  .button-view-more{
+   padding-top: 60px;
+   padding-bottom: 60px;
+   width:10%;
+   margin: auto;
+  }
+  .button-view-more button {
+    padding: 10px 20px;
+    background-color: var(--mainColor);
+    color: white;
+    border: none;
+    font-size: 15px;
+
+  }
+  /* end boutton view more*/
+  /* start photos press*/
+  .images-press{
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .images-press .container > h1{
+    font-size: 50px;
+    color: var(--mainColor);
+    margin-bottom: 60px;
+    text-align: center;
+     }
+     .images-press .container > h1 > span {
+       color: #6DACD9;
+     }
+  .images-press .images {
+   display: flex;
+  justify-content: space-between;
+  }
+  .images-press .images img {
+    width: 250px;
+    height: 250px;
+  }
+  /* end photos press */
+  /*start faq*/
+  .faq-section-kit {
+      padding: 20px;
+      width: 100%;   
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    
+  }
+  
+  .faq-container-kit {
+      padding: 20px;
+  }
+  
+  .faq-container-kit h1 {
+      color: #2b6cb0;
+      text-align: center;
+      margin-bottom: 10px;
+      font-size: 50px;
+  }
+  
+  .faq-container-kit .para-faq {
+      color: #4a5568;
+      text-align: center;  
+      font-size: 20px;
+      width: 50%;
+      margin: 30px auto;
+      
+  }
+  
+  .faq-item-kit {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 40px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+      width: 90%;
+      margin-right: auto;
+      margin-left: auto;
+  }
+  
+  .faq-item-kit details {
+      font-size: 18px;
+      color: #2b6cb0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      
+  
+  }
+  
+  .faq-item-kit details summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      list-style: none;
+      outline: none;
+  
+  }
+  
+  .faq-item-kit details summary .icon {
+      font-size: 20px;
+      transform: rotate(0deg);
+      transition: transform 0.3s ease;
+      width: 30px;
+  }
+  
+  .faq-item-kit details[open] summary .icon {
+      transform: rotate(180deg);
+  }
+  
+  .faq-item-kit details p {
+      margin-top: 30px;
+      font-size: 18px;
+      color: #4a5568;
+  
+  }
+  
+  .faq-item-kit:hover {
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /*end faq*/
+  /*start need more help*/
+  .more-help{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #e0ebf5;
+  }
+  .more-help h1 {
+    font-size: 40px;
+    color: var(--mainColor);
+    text-align: center;
+
+  }
+  .more-help button {
+    width: 20%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+    background: var(--mainColor);
+    border: none;
+    margin-top: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+  .more-help button:hover{
+    transform: scale(1.1);
+  }
+  /*end need more help*/
+  
+  
